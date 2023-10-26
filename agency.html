@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        footer p{
+            float: right; 
+            padding-right: 50px;
+            padding-bottom: 10px;
+        }
+        .space{
+            margin-left: 20px;
+           height: 150px;
+        }
+        h1{
+            margin-left:  20px;
+            font-size: 70px;
+            font-style: bold;
+        } 
+        .creative{
+            color: rgb(9, 9, 137);
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+           
+           
+        }
+        .item1{
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+            height: 300px;
+            width: 45%;
+            padding: 10px;
+           
+            float: left;
+        }
+        .item1 img
+        {
+            float: left;
+            height: 200px;
+            width: 40%;
+        }
+        .item2
+        
+        { 
+            display: flex;
+            flex-direction: row;
+           
+           margin: 20px;
+            height: 300px;
+            width: 45%;
+            padding: 10px;
+            float: right;
+            margin-left: 50px;
+        }
+        .item2 img
+        {
+            float: left;
+            height: 200px;
+            width: 40%;
+           
+        }
+        p{
+            font-size: 20px;
+        }
+        .two{
+            margin-top:2px;
+            margin-left: 35px;
+            
+        }
+         @media(max-width:680px)
+        {
+            .container{
+                display:flex;
+                flex-direction: column;
+                
+            }
+            .item1
+            {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                margin: 2px;
+                margin-bottom: 120px;
+               
+                
+                
+            }
+            .item1 img{
+               padding-left: 25px;
+               width:100%;
+               height: 250px;
+            }
+            .item2
+            {
+                display: flex;
+                flex-direction: column;
+                
+                width: 400px;
+                margin: 2px;
+            }
+            .item2 img{
+                padding-left: 25px ;
+                width: 100%;
+                height: 250px;
+            }
+            footer p{
+              position: relative;
+              top: 650px;
+              
+            } 
+        }
+            @media (min-width:681px) and (max-width:1297px){
+                .container{
+                    display:flex;
+                    flex-direction: row;
+                    width: 90%;
+                    height: 500px;
+                   
+                  
+                   
+                }
+                .item1 
+                {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2px;
+                    margin-right: 2px;
+                   
+                    height: 450px;
+                   
+                }
+                .item1 img{
+                    width: 100%;
+                    height:300px ;
+                    
+                }
+                .item2{
+                    display:flex;
+                    flex-direction: column;
+                    padding:2px;
+                    
+                    height: 450px;
+                   
+
+                }
+                .item2 img
+                {  
+                   
+                    
+                    width: 100%;
+                    height: 300px;
+                } 
+                .two{
+                   margin: 1%;
+                    
+                    width: 90%;
+
+                }
+                
+
+                
+            }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+      <img class="space" src="devlogo.png" alt="">
+      <h1><b>We are a <span class="creative">Creative</span><br>Design Agency</b></h1>
+    
+      <div class="container">
+        <div class="item1">
+             <img src="beautiful.jpg" alt="">
+             <div class="two"><h2>Beauty</h2>
+             <p>We strive to create the most beautiful websites for all your needs.Working closely with you to design and develop an amazing website for your business.</p>
+            </div>
+
+        </div>
+        <div class="item2">
+            <img src="construction.jpg" alt="">
+           <div class="two"><h2>Construction</h2>
+            <p>Built by our team of professional developers, we ensure the most regorgeous and modern websites.Built from scratch using HTML ad CSS.</p>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <footer>
+        <p>
+            <a href="#">Create.Develop.Design</a>
+        </p>
+    </footer>
+    
+</body>
+</html>
